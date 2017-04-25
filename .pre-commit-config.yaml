@@ -1,0 +1,14 @@
+- repo: git@github.com:usmanzafar/pre-commit-php.git
+  sha: 1.1.0
+  hooks:
+  - id: php-lint
+#  - id: php-unit
+  - id: php-cs
+    files: \.(php)$
+    args: [--standard=PSR2]
+  - id: php-cs-fixer
+    files: \.(php)$
+  - id: php-md
+    files: \.(php)$
+  - id: php-cpd
+    files: \.(php)$
